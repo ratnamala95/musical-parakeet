@@ -1,0 +1,270 @@
+.banner-image{
+  max-width: 100%;
+  max-height: 100vh;
+  height:auto;
+  width: auto;
+  background-size: cover;
+  z-index: 0;
+}
+
+.banner_wrapper{
+  height: auto !important;
+  width: auto;
+  max-width: 100%;
+  max-height: 100vh;
+}
+
+.banner_text{
+  z-index: 9;
+  margin-top: -26rem;
+  margin-left: 2rem;
+}
+.banner_text h1{
+  font-size: 4.5em;
+  color: #241e1e;
+}
+.banner_note{
+  font-size: 1.3em;
+  font-weight: 400;
+  color: white;
+}
+
+#home{
+    margin-top: 0px;
+}
+
+#fade_bottom{
+  height: 25.4rem;
+  /* background: linear-gradient(180deg,transparent,rgba(37, 37 ,37, 0.61),#111); */
+  margin-top: -25.3rem;
+  z-index: 1;
+}
+
+.nav_gradient{
+  background: linear-gradient(0deg,transparent,rgba(37, 37 ,37, 0.61),#111);
+}
+
+
+#videos{
+  margin-top: 5rem;
+}
+
+
+.carousel_container{
+  width: 100%;
+  margin-top: -1rem;
+  height: 26rem;
+  background:#111;
+  padding-top: 3.5rem ;
+}
+
+
+.card-body img{
+  width: 22rem;
+  height: 25rem;
+}
+
+.nav-color{
+  background-color: #54217E;
+}
+
+.footer_img{
+  width: 10rem;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
+
+
+footer{
+  width: 100% !important;
+}
+.footer_btn{
+  cursor: pointer;
+  background-color: #411d5e;
+  border-radius: 0.27rem;
+  color: white;
+  border: 1px solid #411d5e;
+  height: 2.3rem;
+  width: 5rem;
+}
+.footer_btn:hover{
+  background-color: #5d2f82;
+  border-color: #5d2f82;
+  height: 2.5rem;
+  width: 5.5rem;
+}
+
+.alignment{
+  width: 100%;
+} 
+a{
+  text-decoration: none;
+  color: #454746;
+}
+#art{
+  margin-top: 15rem;
+}
+#stories{
+  margin-top: 13rem;
+}
+
+.col_art{
+  margin-top: -3rem;
+}
+
+
+/* disclaimer section */
+.disclaimer{
+  background-color:#b7a7d1;
+  /* opacity: 0.8; */
+  border-radius: 1rem;
+  color: #56525c;
+  border: 1px solid #F0B56F;
+  font-weight: 400;
+  margin-top: 5rem !important;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+/* articles section, index page */
+#articles h2{
+  margin-bottom: -2.5rem;
+}
+
+/*********************section 2 carousel********************/
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item > div {
+      display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+      display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+  
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+  
+  .carousel-inner .carousel-item-start.active, 
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+transform: translateX(0);
+}
+
+
+/* to right align iframe */
+
+@media(min-width:937px){
+  .alignment{
+    margin-right: -5.3rem;
+  }
+}
+
+
+/****************banner image resize queries*****************/
+
+@media (min-width:280px) and (max-width:480px) {
+  .banner_text{
+    z-index: 9 !important;
+    position: relative;
+    margin-top: -10rem;
+    margin-bottom: -7.35rem;
+  }
+
+  .banner_text h1{
+    font-size: 2rem;
+  }
+
+  #stories{
+    margin-top: 9rem;
+  }
+}
+
+@media (min-width:300px) and (max-width:499px) {
+  #stories{
+    margin-top: 7.5rem;
+  }
+}
+
+@media (min-width:481px) and (max-width:767px) {
+  .banner_text{
+    z-index: 9 !important;
+    position: relative;
+    margin-top: -10rem;
+    margin-bottom: -7.35rem;
+  }
+
+  .banner_text h1{
+    font-size: 2rem;
+  }
+
+  .carousel{
+    margin-top: -1.37rem!important;
+  }
+
+  #stories{
+    margin-top: 17rem;
+  }
+}
+
+
+
+
+@media (min-width:768px) and (max-width:1024px){
+  .carousel{
+    margin-top: 3rem!important;
+  }
+
+  #stories{
+    margin-top: 10rem;
+  }
+}
+
+@media (min-width:1024) and (max-width:1280px) {
+  #stories{
+    margin-top: 23rem;
+  }
+}
+
+@media (min-width:1280px){
+  .carousel{
+    margin-top: 2.5rem ;
+  }
+}
+
+/* media queries fro articles on small screens */
+
+/* @media (max-width:750px) {
+  .col_art{
+    margin-top: -3rem;
+  }
+} */
+
+
+/* section headings */
+.section_heading{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/****************************************Articles page********************************************/
+
+#article{
+  margin-top: 13rem;
+  font-family: 'Times New Roman', Times, serif;
+}
